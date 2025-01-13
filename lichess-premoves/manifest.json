@@ -1,5 +1,11 @@
 {
 	"name": "Lichess Premoves",
 	"version": "0.1",
-	"manifest_version": 2
+	"manifest_version": 2,
+	"description": "Advanced lichess.org premoves",
+	"content_scripts": [{
+		"matches": ["https://lichess.org/*"],
+		"js": [ "premoves.js" ],
+		"css": []
+	}]
 }
